@@ -7,20 +7,12 @@
 	        <navigator url="#" class="noobintro">新手引导</navigator>
 	    </view>
 	    
-	    <view class="local-nav">
-	        <view class="lnleft">
-	            <view></view>
-	            <view></view>
-	            <view></view>
-	        </view>
-	        <view class="iso"></view>
-	        <view class="lnright">
-	            <view></view>
-	            <view></view>
-	            <view></view>
-	            <view></view>
-	        </view>
-	    </view>
+	    
+		<view class="lists">
+			<view class="item" v-for="(item,index) in 15" :key="index">
+				{{index+1}}
+			</view>
+		</view>
 	
 	    <view class="sub-nav">
 	        <navigator url="#" class="sn1">首页</navigator>
@@ -34,7 +26,7 @@
 <script>
 	import "../../static/css/normalize.css";
 	import "../../static/css/index.css";
-	
+
 
 	export default {
 		data() {
@@ -51,7 +43,7 @@
 	}
 </script>
 
-<style>
+<style scoped>
 @font-face {
     font-family: 'icomoon';
     src:  url('../../static/fonts/icomoon.eot?e068fy');
@@ -63,5 +55,27 @@
     font-style: normal;
     font-display: block;
 }
-
+  .lists{
+    padding: 20rpx;
+    box-sizing: border-box;
+    column-count: 2;
+    column-gap: 10rpx;
+  }
+  
+  .item{
+    break-inside: avoid;
+    width: auto;
+    height: 200rpx;
+    background-color: #eee;
+    line-height: 200rpx;
+    text-align: center;
+    margin-bottom: 10rpx;
+  }
+  
+  .lists .item:nth-child(2n+1){
+    height: 240rpx;
+  }
+  .lists .item:nth-child(3n+1){
+    height: 320rpx;
+  }
 </style>

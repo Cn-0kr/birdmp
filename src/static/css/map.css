@@ -30,8 +30,8 @@ page {
 	height: 900px;
 }
 .map {
-    width: 100%;
-    height: auto; /* 使用 auto 使图片保持宽高比 */
+  width: 100%;
+  height: 100%;
 }
 .changemp{
     position:absolute;

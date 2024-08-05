@@ -94,61 +94,7 @@ body {
 }
 
 /* 瀑布流 */
-.local-nav{
-    /* 这个flex在实现瀑布流之后可以改掉 */
-    display: flex;
-    width:100%;
-    height:1000px;
-    background-color: rgb(230,250,233);
-}
 
-.local-nav .lnleft{
-    flex: 30;
-    margin-left: 10px;
-    /* background-color: rgb(166,166,166); */
-}
-.local-nav .lnleft view{
-    width:100%;
-    background-color: rgb(166,166,166);
-    margin-bottom: 20px;
-}
-
-.lnleft view:nth-child(1){
-    height: 322px;
-}
-.lnleft view:nth-child(2){
-    height: 91px;
-}
-.lnleft view:nth-child(3){
-    height: 193px;
-}
-.local-nav .lnright{
-    flex: 30;
-    margin-right: 10px;
-}
-.local-nav .lnright view{
-    width:100%;
-    background-color: rgb(166,166,166);
-    margin-bottom: 20px;
-}
-/* 1.前后端怎么联系
-springboot
-2.如何用js完善事件监听 */
-.lnright view:nth-child(1){
-    height: 161px;
-}
-.lnright view:nth-child(2){
-    height: 209px;
-}
-.lnright view:nth-child(3){
-    height: 193px;
-}
-.lnright view:nth-child(4){
-    height: 56px;
-}
-.iso{
-    flex: 1;
-}
   /* .lists {
     column-count: 2;
     column-gap: 10rpx;
